@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="pt-BR"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Los Angeles Lakers </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/nbazone/CSS/geral.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        header{
+            color: rgb(255, 255, 255);
+        }
+        h2{
+            color: #552583;
+        }
+        b {
+            font-size: 1em;
+            color: #552583;
+        }
+        footer{
+            text-align: center;
+            width: 100%;
+        }
+        h1{
+            text-align: right;
+            text-align: center;
+            padding: 5px;
+        }
+        section{
+            padding: 15px;
+        }
+        p {
+            color: #1d1d1d;
+            padding: 5px;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        img{
+            width:360px;
+            float: right;
+            margin-right: 30px;
+        }
+        navbar-brand{
+            width: 100px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            color: #1d1d1d;
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #FDB927;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        input[type="text"] {
+            margin-left: 5px;
+        }
+        input[type="submit"] {
+            display: block;
+            margin: 20px auto 0;
+            background-color: #552583;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #FDB927;
+        }
+
+        .logo{
+            width: 5em;
+            height: 5em;
+        }
+        .texto-lista{
+            padding: 15px;
+        }
+        .formulario {
+            max-width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .logo{
+            width: 5em;
+            height: 4em;
+        }
+        .texto-lista{
+            padding: 15px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+            .form-group {
+            margin-bottom: 20px;
+            }
+        .banner {
+            width: 100%;
+            height: auto;
+            padding: 25px;
+            }
+        .carousel-inner{
+            width: 100%;
+            height: 400px;
+            padding: 0px;
+        }
+        .linkshome {
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .secao4 {
+            margin: 0;
+            font-family: Helvetica, sans-serif;
+        }
+        
+        .secao4-div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .secao4-div-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: calc(100% / 3 - 60px);
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            background-color: white;
+            transition: all 0.5s ease;
+        }
+        
+        .secao4-div-card:hover {
+            transform: scale(1.1);
+            z-index: 1;
+        }
+        
+        .secao4-div-card img {
+            width: 97%;
+            height: 250px;
+        }
+        
+        .secao4-div-card h3 {
+            margin-bottom: 0px;
+        }
+        .bg-body-tertiary{
+            background: rgb(107, 48, 161);
+           }
+
+           .bg-light {
+            background-color: darkgray;
+        
+        }
+        .bg-body-tertiary{
+            background: #552583;
+           }
+         
+        .title{
+            margin-top: 20px;
+            font-size: 70px;
+            font-weight: 700;
+            color: #552583;
+            font-family: 'open_sansregular';
+            letter-spacing: 5px;
+            margin-bottom: 20px;
+            background:#ffffff;
+            position: relative;
+            animation: motion 3s 1;
+        }
+        .descricao{
+            font-size:1.5em;
+            color: #868686;
+            font-family: 'open_sansregular';
+            letter-spacing: 26px;
+            transition:6s;
+        }
+        .box-texto{
+            text-align:center;
+            position: absolute;
+            top:0;
+            left:0;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            display: contents;
+            background: red; }
+        
+        .box-texto span{ display:block; }
+        
+        .nav-link, .dropdown-toggle{
+            color: #fff;
+            font-size: 20px;
+            width: 100%;
+            height: 50px;
+    }
+        footer {
+            background-color: #1d1d1d;
+            color: #fff;
+            padding: 30px 0;
+            font-size: 14px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        footer ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        footer ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        footer ul li a:hover {
+            color: #5f00cc;
+        }
+      
+        footer .social-icons a {
+            color: #fff;
+            font-size: 20px;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        footer .social-icons a:hover {
+            color: #552583;
+        }
+        footer p {
+            margin-top: 20px;
+            font-size: 12px;
+        }
+          @keyframes motion{
+            0%{
+                color: #552583;
+                margin-bottom: -42px;
+            }
+            30%{
+                letter-spacing: 30px;
+                margin-bottom: -42px;
+                }
+            85%{
+                letter-spacing: 5px;
+                margin-bottom: -42px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="box-texto">      
+        <h1 class="title">Bem vindo Lakers Fans!</h1>
+        <span class="descricao">Los Angeles Lakers</span>
+      </header><br>
+      <br>
+  <header>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
+            <h1 style="color: #552583;">Times</h1>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">All Star Games</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Arenas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Times</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Jogadores</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+        
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" id="historia" href="#">Historia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="CoreseMascote">Cores e Mascote</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="momentosnotaveis">Momentos Notáveis</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Rivalidades">Rivalidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="CorePlayers">Core Players</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Quiz">Quiz</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Lo Angeles Lakers
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Jogadores</a></li>
+                      <li><a class="dropdown-item" href="#">Titulos</a></li>
+                      <li><a class="dropdown-item" href="#">Temporada atual</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <section>
+        <div>
+            <img src="https://cdn.nba.com/teams/uploads/sites/1610612747/2021/12/lakers_70x70.svg" alt="Los Angeles Lakers">
+            <br>
+            <h1><b>Los Angeles Lakers</b></h1>
+            <br>
+                <h2><b>História</b></h2>
+            <p>
+                    A história da fundação do Los Angeles Lakers remonta à década de 1940, quando a equipe foi originalmente estabelecida na cidade de Minneapolis, Minnesota. O time começou como Minneapolis Lakers, nomeado após o grande número de lagos na região. A fundação da equipe ocorreu em 1947.
+                <br>
+                Naquela época, a equipe era parte da Basketball Association of America (BAA), que mais tarde se fundiu com a National Basketball League (NBL) para formar a National Basketball Association (NBA) em 1949.
+                <br>
+                Os Lakers, liderados por estrelas como George Mikan, foram uma potência dominante na era inicial da NBA. Eles conquistaram vários campeonatos da NBA enquanto ainda estavam em Minneapolis.
+                Em 1960, a equipe mudou-se para Los Angeles devido a questões financeiras e a falta de um ginásio adequado em Minneapolis. Essa mudança para Los Angeles marcou o início de uma nova era para a equipe.<br>
+                Sob a liderança de lendas como Jerry West, Elgin Baylor, Wilt Chamberlain, Magic Johnson, Kareem Abdul-Jabbar, Shaquille O'Neal e Kobe Bryant, os Lakers construíram uma das mais impressionantes histórias de sucesso na história da NBA.  <br>
+            </p>
+                <br>
+                <h2><b>Arena</b></h2>
+            <p>
+                O Los Angeles Lakers joga suas partidas em casa no <a href="#">Staples Center</a>. localizado no centro de Los Angeles, Califórnia. O Staples Center é uma arena multiuso que também é a casa de outros times profissionais, como o Los Angeles Clippers (NBA) e o Los Angeles Kings (NHL).
+                Quanto à capacidade, o Staples Center pode acomodar cerca de 18.997 espectadores para jogos de basquete da NBA.
+            </p>
+
+            <hr>
+                <img src="https://w0.peakpx.com/wallpaper/849/678/HD-wallpaper-bailey-mascot-los-angeles-lakers-abstract-art-nba-creative-usa-los-angeles-lakers-mascot-nba-mascots-official-mascot-bailey-mascot-thumbnail.jpg" alt="Mascote">
+              
+                    <h2><b>Cores e Mascote</b></h2>
+                <p>
+                    As cores oficiais do Los Angeles Lakers são Dourado e Púrpura
+                    O mascote oficial do Los Angeles Lakers é o <b>Jack the Laker</b>, Jack é um leão antropomórfico vestido com as cores e o uniforme da equipe.
+                    <br>
+                    A história por trás do mascote "Jack the Laker" remonta a 2003, quando ele foi introduzido pela primeira vez como parte dos esforços de marketing e entretenimento da equipe.
+                    O nome "Jack" é uma referência a <b>Jack Kent Cooke</b>, o lendário proprietário dos Lakers durante sua época em Los Angeles.
+                    A escolha de um leão como mascote pode estar ligada à ideia de força, coragem e realeza, características que muitas equipes desejam associar a si mesmas. 
+                    Além disso, os leões são frequentemente vistos como símbolos de liderança e poder, o que pode refletir a imagem que os Lakers querem projetar como uma equipe dominante na NBA.
+                    Desde sua introdução, Jack the Laker tornou-se uma presença familiar durante os jogos em casa dos Lakers, animando a multidão e participando de diversas atividades de entretenimento durante os intervalos e eventos especiais. Ele se tornou uma parte querida da experiência do torcedor dos Lakers ao longo dos anos.
+
+                </p>
+        </div>
+    </section>
+<hr>
+<section>
+    <h2><b>Momentos Notáveis</b></h2>
+    <p>
+        <li><b>Dinastia de Minneapolis:</b> Nos anos 1950, os Lakers de Minneapolis, liderados por George Mikan, dominaram a NBA, conquistando cinco títulos da liga.</li>
+        <li><b>Mudança para Los Angeles:</b> Em 1960, os Lakers mudaram-se de Minneapolis para Los Angeles. Isso marcou o início de uma nova era para a equipe e foi um marco importante em sua história.</li>
+        <li><b>Jerry West e Elgin Baylor:</b> Durante os anos 1960, Jerry West e Elgin Baylor lideraram os Lakers, mas apesar de chegarem a várias finais, não conseguiram conquistar um título da NBA.</li>
+        <li><b>A chegada de Wilt Chamberlain:</b> Em 1968, Wilt Chamberlain juntou-se aos Lakers, formando uma equipe lendária com Jerry West e Elgin Baylor. Juntos, eles conquistaram o título da NBA em 1972.</li>
+        <li><b>Era Magic Johnson e Kareem Abdul-Jabbar:</b> Nos anos 1980, Magic Johnson e Kareem Abdul-Jabbar lideraram os Lakers a cinco títulos da NBA durante a década, solidificando seu lugar como uma das maiores duplas da história do basquete.</li>
+        <li><b>Três-peat com Shaq e Kobe:</b>Nos anos 2000, Shaquille O'Neal e Kobe Bryant lideraram os Lakers a três títulos consecutivos da NBA em 2000, 2001 e 2002.</li>
+        <li><b>LeBron James e Anthony Davis:</b> A chegada de LeBron James e Anthony Davis aos Lakers em 2018 e 2019, respectivamente, trouxe esperança de mais sucesso e uma nova era de competitividade para a equipe.</li>
+        <li><b>Retorno ao topo com Kobe e Pau Gasol:</b> Nos anos 2010, Kobe Bryant e Pau Gasol lideraram os Lakers a dois títulos da NBA em 2009 e 2010, solidificando o legado de Bryant como um dos maiores jogadores da história.</li>
+    </p>
+</section>
+<hr>
+    <h2><b>Rivalidades</b></h2>
+    <p>
+        <li><a href="#">Boston Celtics:</a> Esta é uma das maiores rivalidades na história da NBA. Os Lakers e os Celtics têm se enfrentado em várias finais da NBA ao longo dos anos, proporcionando alguns dos momentos mais memoráveis do basquete profissional.</li>
+        <li><a href="#">Los Angeles Clippers:</a> Compartilhando a mesma cidade, os Lakers e os Clippers têm uma rivalidade intraurbana intensa. Nos últimos anos, os Clippers emergiram como uma equipe competitiva na NBA, tornando os confrontos entre essas equipes ainda mais emocionantes.</li>
+        <li><a href="#">San Antonio Spurs:</a> Durante os anos 2000, os Lakers e os Spurs tiveram uma rivalidade marcante, com confrontos frequentes nos playoffs. Ambas as equipes conquistaram vários títulos da NBA nessa década, o que aumentou a intensidade dos jogos entre elas.</li>
+        <li><a href="#">Sacramento Kings:</a> Nos anos 2000, os Lakers e os Kings tiveram uma rivalidade acirrada, com confrontos memoráveis nos playoffs, especialmente nas semifinais da Conferência Oeste</li>
+    </p>
+
+
+    <div class="container">
+        <h1><b>Los Angeles Lakers Core Players</b></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Posição</th>
+                    <th>Número</th>
+                    <th>Altura</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Colin Castleton</td>
+                    <td>Pivô</td>
+                    <td>14</td>
+                    <td>2,08 m</td>
+                </tr>
+                <tr>
+                    <td>Max Christie</td>
+                    <td>Guarda</td>
+                    <td>10</td>
+                    <td>1,96 m</td>
+                </tr>
+                <tr>
+                    <td>Anthony Davis</td>
+                    <td>Ala-Pivô</td>
+                    <td>3</td>
+                    <td>2,08 m</td>
+                </tr>
+                <tr>
+                    <td>Spencer Dinwiddie</td>
+                    <td>Armador</td>
+                    <td>26</td>
+                    <td>1,96 m</td>
+                </tr>
+                <tr>
+                    <td>Harry Giles III</td>
+                    <td>Ala</td>
+                    <td>20</td>
+                    <td>2,08 m</td>
+                </tr>
+                <tr>
+                    <td>Rui Hachimura</td>
+                    <td>Ala-Pivô</td>
+                    <td>28</td>
+                    <td>2,03 m</td>
+                </tr>
+                <tr>
+                    <td>Jaxson Hayes</td>
+                    <td>Pivô</td>
+                    <td>11</td>
+                    <td>2,13 m</td>
+                </tr>
+                <tr>
+                    <td>D'Moi Hodge</td>
+                    <td>Guarda</td>
+                    <td>55</td>
+                    <td>1,91 m</td>
+                </tr>
+                <tr>
+                    <td>Jalen Hood-Schifino</td>
+                    <td>Guarda</td>
+                    <td>0</td>
+                    <td>1,96 m</td>
+                </tr>
+                <tr>
+                    <td>LeBron James</td>
+                    <td>Ala</td>
+                    <td>23</td>
+                    <td>2,06 m</td>
+                </tr>
+                <tr>
+                    <td>Maxwell Lewis</td>
+                    <td>Ala</td>
+                    <td>21</td>
+                    <td>2,01 m</td>
+                </tr>
+                <tr>
+                    <td>Skylar Mays</td>
+                    <td>Ala-Armador</td>
+                    <td>4</td>
+                    <td>1,91 m</td>
+                </tr>
+                <tr>
+                    <td>Taurean Prince</td>
+                    <td>Ala-Pivô</td>
+                    <td>12</td>
+                    <td>1,98 m</td>
+                </tr>
+                <tr>
+                    <td>Austin Reaves</td>
+                    <td>Ala-Armador</td>
+                    <td>15</td>
+                    <td>1,96 m</td>
+                </tr>
+                <tr>
+                    <td>Cam Reddish</td>
+                    <td>Ala</td>
+                    <td>5</td>
+                    <td>2,01 m</td>
+                </tr>
+                <tr>
+                    <td>D'Angelo Russell</td>
+                    <td>Armador</td>
+                    <td>1</td>
+                    <td>1,91 m</td>
+                </tr>
+                <tr>
+                    <td>Jarred Vanderbilt</td>
+                    <td>Ala-Pivô</td>
+                    <td>2</td>
+                    <td>2,03 m</td>
+                </tr>
+                <tr>
+                    <td>Gabe Vincent</td>
+                    <td>Armador</td>
+                    <td>7</td>
+                    <td>1,88 m</td>
+                </tr>
+                <tr>
+                    <td>Christian Wood</td>
+                    <td>Pivô</td>
+                    <td>35</td>
+                    <td>2,11 m</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <section class="secao4" id="sobre">
+        <h2>Jogadores notaveis da historia dos Lakers </h2>
+        <div class="secao4-div">
+            <div class="secao4-div-card">
+                <img decoding="async" src="https://cdn.nba.com/headshots/nba/latest/1040x760/977.png" alt="Kobe Bryant">
+                <br>
+                <h3>Kobe Bryant</h3>
+                <p>Dirk é indiscutivelmente o maior jogador da história dos Mavericks. Ele jogou toda a sua carreira de 21 temporadas na NBA com o Dallas Mavericks, liderando a equipe para o seu único título da NBA em 2011 e ganhando o prêmio de MVP das Finais.</p>
+            </div>
+           
+            <div class="secao4-div-card">
+                <img decoding="async" src="https://cdn.nba.com/headshots/nba/latest/1040x760/77142.png" alt="Magic Johnson">
+                <br>
+                <h3>Magic Johnson</h3>
+                <p>Magic Johnson é outro ícone do basquete e uma figura lendária nos Lakers. Ele foi uma peça fundamental na equipe dos Lakers nos anos 1980, liderando-os a cinco títulos da NBA. Johnson era conhecido por sua visão de jogo incrível, habilidades de passe e versatilidade como armador. Ele ganhou o prêmio de MVP da NBA três vezes e foi selecionado para 12 All-Star Games ao longo de sua carreira.</p>
+            </div>
+    
+            <div class="secao4-div-card">
+                <img decoding="async" src="https://cdn.nba.com/headshots/nba/latest/1040x760/76003.png" alt="Kareem Abdul-Jabbar">
+                <br>
+                <h3>Kareem Abdul-Jabbar</h3>
+                <p>Kareem ajudou os Lakers a ganharem cinco títulos da NBA durante sua passagem pela equipe. Abdul-Jabbar é o maior pontuador da história da NBA e sua lendária "skyhook" é uma das jogadas mais icônicas do basquete. </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="formulario">
+        <h2><b>Formulário de Perguntas sobre o Los Angeles Lakers</b></h2>
+        <form id="lakers-form">
+            <div class="form-group">
+                <label>Qual é o seu jogador favorito atual do Los Angeles Lakers?</label>
+                <br>
+                <div>
+                    <label for="player-lebron-james">LeBron James</label>
+                    <input type="radio" id="player-lebron-james" name="favorite-player" value="LeBron James">
+                    
+                </div>
+                <div>
+                    <label for="player-anthony-davis">Anthony Davis</label>
+                    <input type="radio" id="player-anthony-davis" name="favorite-player" value="Anthony Davis">
+                    
+                </div>
+                <div>
+                    <label for="player-russell-westbrook">Russell Westbrook</label>
+                    <input type="radio" id="player-russell-westbrook" name="favorite-player" value="Russell Westbrook">
+                    
+                </div>
+                <div>
+                    
+                    <label for="player-other">Outro:</label>
+                    <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
+                    
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Quem você considera o maior jogador da história do Los Angeles Lakers?</label>
+                <br>
+                <div>
+                    <label for="greatest-player-magic-johnson">Magic Johnson</label>
+                    <input type="radio" id="greatest-player-magic-johnson" name="greatest-player" value="Magic Johnson">    
+                </div>
+                <div>   
+                    <label for="greatest-player-kobe-bryant">Kobe Bryant</label>
+                    <input type="radio" id="greatest-player-kobe-bryant" name="greatest-player" value="Kobe Bryant">
+                </div>
+                <div>
+                    <label for="greatest-player-kareem-abdul-jabbar">Kareem Abdul-Jabbar</label>
+                    <input type="radio" id="greatest-player-kareem-abdul-jabbar" name="greatest-player" value="Kareem Abdul-Jabbar">
+                </div>
+                <div>
+                    <label for="greatest-player-other">Outro:</label>
+                    <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Qual é a sua expectativa para a próxima temporada do Los Angeles Lakers?</label>
+                <br>
+                <div>
+                    <label for="next-season-expectation-championship">Vencer o campeonato</label>
+                    <input type="radio" id="next-season-expectation-championship" name="next-season-expectation" value="Vencer o campeonato">
+                    
+                </div>
+                <div>
+                    <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
+                    <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
+                    
+                </div>
+                <div>
+                    <label for="next-season-expectation-development">Desenvolvimento dos jogadores</label>
+                    <input type="radio" id="next-season-expectation-development" name="next-season-expectation" value="Desenvolvimento dos jogadores">
+                    
+                </div>
+                <div>
+                    <label for="next-season-expectation-other">Outro:</label>
+                    <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
+                </div>
+                <br>
+                <div>
+                    <label for="next-season-expectation-question">Quais áreas você acredita que o Los Angeles Lakers precisa melhorar para ter sucesso na próxima temporada?</label>
+                    <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+                </div>
+                <br>
+                <div>
+                    <label for="next-season-expectation-question">Como você avalia as contratações feitas pelo Los Angeles Lakers nesta offseason?</label>
+                    <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+                </div>
+                <br>
+                <div>
+                    <label for="next-season-expectation-question">Qual é a sua opinião sobre o treinador atual do Los Angeles Lakers, e o que você gostaria de ver diferente na abordagem técnica da equipe?</label>
+                    <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+                </div>
+            </div>
+            <input type="submit" value="Enviar Respostas">
+        </form>
+    </div>
+    <div style="position: relative; width: 100%; height: 0; padding-top: 50.0000%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGbSUJDok&#x2F;wdIgFFUC7Or7Um5wTopI8A&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGbSUJDok&#x2F;wdIgFFUC7Or7Um5wTopI8A&#x2F;view?utm_content=DAGGbSUJDok&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a> 
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <ul>
+                    <li><a href="SplashScreen.html">Home</a></li>
+                    <li><a href="#">Times</a></li>
+                    <li><a href="players.html">Jogadores</a></li>
+                    <li><a href="arenas.html">Arenas</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div class="social-icons">
+                    <a href="https://github.com/techybluiz"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/bianca-santos-71227a19b/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXSnhDSBMsQXLsFNHlJrnVZsbhLNnBLzZNKgvVgRNCpXGcmGzVsCKBtzhlhHgsDJrCKMN"><i class="fa-solid fa-envelope"></i></a>
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p>&copy; 2024 Todos os direitos reservados. Desenvolvido por Bianca Luiz.</p>
+            </div>
+        </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-fIS28fKNuSy82olZu2UNUbzJrjKk4cOeY0PnN/3kq5CkTX9aW1Kgq3M08iIKG/mnEw5rwS8QqH0a1ED6N5O4Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>

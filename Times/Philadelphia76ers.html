@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="pt-BR"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Philadelphia 76ers</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/nbazone/CSS/geral.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        header{
+            color: rgb(255, 255, 255);
+        }
+        h2{
+            color: #006BB6;
+        }
+        b {
+            font-size: 1em;
+            color: #006BB6;
+        }
+        footer{
+            text-align: center;
+            width: 100%;
+        }
+        hr{
+            color: rgb(255, 255, 255);
+        }
+        h1{
+            text-align: right;
+            text-align: center;
+            padding: 5px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #d8e7f0;
+            
+        }
+        section{
+            padding: 15px;
+        }
+        p {
+            padding: 5px;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        img{
+            width:360px;
+            float: right;
+            margin-right: 30px;
+        }
+        navbar-brand{
+            width: 150px;
+        }
+
+        navbar-brand{
+            width: 150px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #ED174C;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        input[type="text"] {
+            margin-left: 5px;
+        }
+        input[type="submit"] {
+            display: block;
+            margin: 20px auto 0;
+            background-color: #ED174C;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #ED174C;
+        }
+        .bg-light {
+            background: rgb(0,107,182);
+            background: linear-gradient(90deg, rgba(0,107,182,1) 38%, rgba(237,23,76,1) 55%);
+        
+        }
+        .logo{
+            width: 5em;
+            height: 5em;
+        }
+        .texto-lista{
+            padding: 15px;
+        }
+        .formulario {
+            max-width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .logo{
+            width: 5em;
+            height: 4em;
+        }
+        .texto-lista{
+            padding: 15px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .banner {
+        width: 100%;
+        height: auto;
+        padding: 25px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
+            <h1>Teams</h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">All Star Games</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Arenas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Times</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Jogadores</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <section>
+        <div>
+            <img src="https://cdn.nba.com/teams/uploads/sites/1610612755/2022/06/76CoS-PrimaryIconRev-471x471-1.svg">
+            <br>
+            <h1><b>Philadelphia 76ers</b></h1>
+            <br>
+            <p>
+                <h2><b>História</b></h2>
+                O Philadelphia 76ers é uma equipe de basquete profissional sediada em Filadélfia, Pensilvânia, nos Estados Unidos. A história da franquia remonta ao ano de 1946, quando foi fundada como Syracuse Nationals, com sede em Syracuse, Nova York. Eles foram um dos membros fundadores da Basketball Association of America (BAA), que mais tarde se tornou a National Basketball Association (NBA).<br>
+                Nos primeiros anos, os Nationals tiveram sucesso moderado na BAA/NBA, mas alcançaram seu ponto alto na temporada de 1954-1955, quando ganharam o campeonato da NBA. Em 1963, a equipe foi vendida e transferida para Filadélfia, onde se tornou o Philadelphia 76ers. O nome "76ers" faz referência ao ano de 1776, quando a Declaração de Independência dos Estados Unidos foi assinada em Filadélfia.<br>
+                O período mais famoso e bem-sucedido dos 76ers ocorreu na década de 1960, quando a equipe foi liderada por lendas do basquete como Wilt Chamberlain e Hal Greer. Em 1967, eles conquistaram seu segundo título da NBA.<br>
+                Nas primeiras temporadas, os Raptors tiveram dificuldades em encontrar sucesso na liga. No entanto, eles gradualmente construíram uma base de fãs leais em Toronto e em todo o Canadá.<br>
+                Durante os anos seguintes, os 76ers passaram por altos e baixos, mas continuaram a ser uma presença competitiva na NBA. Em 1983, eles ganharam seu terceiro título da NBA com uma equipe estrelada por Julius Erving, conhecido como "Dr. J".<br>
+                <br>
+                <h2><b>Arena</b></h2> A arena principal do Philadelphia 76ers é o <a href="#s"> Wells Fargo Center </a> , localizado na cidade de Filadélfia, Pensilvânia, nos Estados Unidos.<br>
+                A capacidade do Wells Fargo Center para jogos de basquete da NBA é de aproximadamente 20.478 espectadores. <br>
+                <hr>
+                <img src="https://i.pinimg.com/originals/cf/84/68/cf8468089cfc322d5655121908b8bc5b.jpg" alt="Mascote">
+                <h2><b>Cores e Mascote</b></h2>
+                <p>O mascote do Philadelphia 76ers é o <b>Franklin the Dog</b>, ou simplesmente Franklin. Franklin é um cão esportivo e amigável que representa a equipe em eventos, jogos e atividades comunitárias.<br>
+                    A história por trás do mascote Franklin não é tão documentada quanto a de alguns outros mascotes esportivos, mas ele foi introduzido como mascote oficial dos 76ers em 2015. O nome "Franklin" é uma homenagem a Benjamin Franklin, uma figura histórica significativa associada à cidade de Filadélfia e ao estado da Pensilvânia.
+                    <b>Benjamin Franklin</b> foi um dos fundadores dos Estados Unidos e desempenhou um papel importante na história da Filadélfia.<br>
+                    Franklin the Dog foi concebido para representar a energia, a diversão e o espírito competitivo da equipe. Ele é frequentemente visto nos jogos dos 76ers, interagindo com os fãs, participando de brincadeiras no intervalo e incentivando a equipe.<br>
+                    Como muitos mascotes esportivos, Franklin desempenha um papel importante na construção da atmosfera festiva e envolvente nos eventos dos 76ers, além de ser uma figura querida entre os torcedores da equipe.<br>
+                </p>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h2><b>Momentos Notáveis</b></h2>
+            <p>
+                    <li><b>Campeonatos da NBA:</b>  Os 76ers ganharam três títulos da NBA em sua história. O primeiro título foi em 1955, quando ainda eram conhecidos como Syracuse Nationals. Os outros dois foram conquistados em 1967 e 1983, já como Philadelphia 76ers. </li>
+                    <li><b>Wilt Chamberlain's 100-Point Game:</b> Em 2 de março de 1962, Wilt Chamberlain, jogando pelos Philadelphia Warriors contra o New York Knicks, marcou incríveis 100 pontos em um único jogo, um recorde que ainda permanece na NBA.</li>
+                    <li><b>Era de Julius Erving:</b> Julius Erving, mais conhecido como "Dr. J", foi uma das figuras mais icônicas do basquete e liderou os 76ers a um título da NBA em 1983. Seus voos espetaculares para enterradas se tornaram lendários.</li>
+                    <li><b>Allen Iverson's MVP Season: </b>  Na temporada de 2000-2001, Allen Iverson liderou os 76ers em uma campanha incrível, culminando com ele sendo nomeado MVP da NBA. Ele levou a equipe até as Finais da NBA, onde enfrentaram o Los Angeles Lakers de Kobe Bryant e Shaquille O'Neal.</li>
+                    <li><b>Processo de Reconstrução:</b>Nos últimos anos, os 76ers passaram por um processo de reconstrução liderado pelo gerente geral Sam Hinkie, conhecido como "The Process". Isso envolveu uma série de temporadas de baixo desempenho com o objetivo de obter escolhas de draft de alto nível para construir uma equipe forte para o futuro. Este período resultou na seleção de jovens talentos como Joel Embiid e Ben Simmons.</li>
+            </p>
+        </div>
+        <div>
+            <h2><b>Rivalidades</b></h2>
+            <p>
+               <a href="#">New York Knicks:</a> A rivalidade entre os 76ers e os New York Knicks é alimentada pela proximidade geográfica e pela competição dentro da Conferência Leste. Jogos entre essas equipes muitas vezes são intensos e acirrados, especialmente quando estão em jogo posições nos playoffs. <br>
+               <a href="#">Boston Celtics:</a> A rivalidade entre os 76ers e os Boston Celtics remonta aos primeiros dias da NBA. Ambas as equipes estão entre as mais bem-sucedidas da liga e se enfrentaram em várias séries de playoffs emocionantes ao longo dos anos. Essa rivalidade é alimentada pela competição regional e pela busca por supremacia na Conferência Leste.<br>
+               <a href="#">Los Angeles Lakers: </a> Embora a rivalidade entre os 76ers e os Lakers seja mais centrada em torno das Finais da NBA do que em confrontos regulares de temporada regular, essas duas equipes se enfrentaram em algumas das séries finais mais memoráveis da história da NBA. Os duelos entre ícones como Julius Erving e Magic Johnson ou Allen Iverson e Kobe Bryant acrescentaram mais combustível a essa rivalidade.<br>
+            </p>
+        </div>
+    </section>
+    <div class="container">
+        <h1><b>Philadelphia 76ers Core Players</b></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Posição</th>
+                    <th>Número</th>
+                    <th>Altura</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mo Bamba</td>
+                    <td>Pivô</td>
+                    <td>5</td>
+                    <td>2.13 m</td>
+                </tr>
+                <tr>
+                    <td>Nicolas Batum</td>
+                    <td>Ala-Pivô</td>
+                    <td>40</td>
+                    <td>2.03 m</td>
+                </tr>
+                <tr>
+                    <td>Ricky Council IV</td>
+                    <td>Guarda</td>
+                    <td>16</td>
+                    <td>1.98 m</td>
+                </tr>
+                <tr>
+                    <td>Robert Covington</td>
+                    <td>Ala-Pivô</td>
+                    <td>33</td>
+                    <td>2.01 m</td>
+                </tr>
+                <tr>
+                    <td>Jeff Dowtin Jr.</td>
+                    <td>Guarda</td>
+                    <td>11</td>
+                    <td>1.91 m</td>
+                </tr>
+                <tr>
+                    <td>Joel Embiid</td>
+                    <td>Pivô</td>
+                    <td>21</td>
+                    <td>2.13 m</td>
+                </tr>
+                <tr>
+                    <td>Tobias Harris</td>
+                    <td>Ala-Pivô</td>
+                    <td>12</td>
+                    <td>2.03 m</td>
+                </tr>
+                <tr>
+                    <td>Buddy Hield</td>
+                    <td>Ala-Armador</td>
+                    <td>17</td>
+                    <td>1.93 m</td>
+                </tr>
+                <tr>
+                    <td>Kyle Lowry</td>
+                    <td>Armador</td>
+                    <td>7</td>
+                    <td>1.83 m</td>
+                </tr>
+                <tr>
+                    <td>KJ Martin</td>
+                    <td>Ala</td>
+                    <td>1</td>
+                    <td>1.98 m</td>
+                </tr>
+                <tr>
+                    <td>Tyrese Maxey</td>
+                    <td>Armador</td>
+                    <td>0</td>
+                    <td>1.88 m</td>
+                </tr>
+                <tr>
+                    <td>De'Anthony Melton</td>
+                    <td>Ala-Armador</td>
+                    <td>8</td>
+                    <td>1.91 m</td>
+                </tr>
+                <tr>
+                    <td>Kelly Oubre Jr.</td>
+                    <td>Ala-Armador</td>
+                    <td>9</td>
+                    <td>2.01 m</td>
+                </tr>
+                <tr>
+                    <td>Cameron Payne</td>
+                    <td>Armador</td>
+                    <td>22</td>
+                    <td>1.91 m</td>
+                </tr>
+                <tr>
+                    <td>Paul Reed</td>
+                    <td>Ala</td>
+                    <td>44</td>
+                    <td>2.06 m</td>
+                </tr>
+                <tr>
+                    <td>Terquavion Smith</td>
+                    <td>Guarda</td>
+                    <td>23</td>
+                    <td>1.93 m</td>
+                </tr>
+                <tr>
+                    <td>D.J. Wilson</td>
+                    <td>Ala-pivô</td>
+                    <td>20</td>
+                    <td>2,08 m</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <div class="formulario">
+        <h2><b>Formulário de Perguntas sobre o Philadelphia 76ers</b></h2>
+        <form id="sixers-form">
+            <div class="form-group">
+                <label>Qual é o seu jogador favorito atual do Philadelphia 76ers?</label>
+                <br>
+                <div>
+                    <label for="player-joel-embiid">Joel Embiid</label>
+                    <input type="radio" id="player-joel-embiid" name="favorite-player" value="Joel Embiid">
+                </div>
+                <div>
+                    <label for="player-ben-simmons">Ben Simmons</label>
+                    <input type="radio" id="player-ben-simmons" name="favorite-player" value="Ben Simmons">
+                </div>
+                <div>
+                    <label for="player-tobias-harris">Tobias Harris</label>
+                    <input type="radio" id="player-tobias-harris" name="favorite-player" value="Tobias Harris">
+                </div>
+                <div>
+                    <label for="player-other">Outro:</label>
+                    <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Quem você considera o maior jogador da história do Philadelphia 76ers?</label>
+                <br>
+                <div>
+                    <label for="greatest-player-allen-iverson">Allen Iverson</label>
+                    <input type="radio" id="greatest-player-allen-iverson" name="greatest-player" value="Allen Iverson">
+                </div>
+                <div>
+                    <label for="greatest-player-julius-erving">Julius Erving (Dr. J)</label>
+                    <input type="radio" id="greatest-player-julius-erving" name="greatest-player" value="Julius Erving">
+                </div>
+                <div>
+                    <label for="greatest-player-charles-barkley">Charles Barkley</label>
+                    <input type="radio" id="greatest-player-charles-barkley" name="greatest-player" value="Charles Barkley">
+                </div>
+                <div>
+                    <label for="greatest-player-other">Outro:</label>
+                    <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Qual é a sua expectativa para a próxima temporada da NBA para o Philadelphia 76ers?</label>
+                <br>
+                <div>
+                    <label for="next-season-expectation-championship">Ganhar o campeonato</label>
+                    <input type="radio" id="next-season-expectation-championship" name="next-season-expectation" value="Ganhar o campeonato">
+                </div>
+                <div>
+                    <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
+                    <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
+                </div>
+                <div>
+                    <label for="next-season-expectation-development">Desenvolvimento dos jogadores</label>
+                    <input type="radio" id="next-season-expectation-development" name="next-season-expectation" value="Desenvolvimento dos jogadores">
+                </div>
+                <div>
+                    <label for="next-season-expectation-other">Outro:</label>
+                    <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
+                </div>
+                <div>
+                    <label for="next-season-expectation-question">Quais áreas você acredita que o Philadelphia 76ers precisa melhorar para ter sucesso na próxima temporada?</label>
+                    <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+                </div>
+        
+                <div>
+                    <label for="next-season-expectation-question">Como você avalia as contratações feitas pelo Philadelphia 76ers nesta offseason?</label>
+                    <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+                </div>
+        
+                <div>
+                    <label for="next-season-expectation-question">Qual é a sua opinião sobre o treinador atual do Philadelphia 76ers, e o que você gostaria de ver diferente na abordagem técnica da equipe?</label>
+                    <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+                </div>
+            </div>
+            <input type="submit" value="Enviar Respostas">
+        </form>
+    </div>
+    <div>
+        <img class="banner" src="https://s4.aconvert.com/convert/p3r68-cdx67/ajw7k-r66p8.jpg" alt="">
+    </div>
+
+        <footer>
+            <p>&copy; 2024 NBA - Philadelphia 76ers </p>
+          </footer>

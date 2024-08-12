@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="pt-BR"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Los Angeles Lakers </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/nbazone/CSS/geral.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        header{
+            color: rgb(255, 255, 255);
+        }
+        h2{
+            color: #85714D;
+        }
+        b {
+            font-size: 1em;
+            color: #85714D;
+        }
+        footer{
+            text-align: center;
+            width: 100%;
+        }
+        hr{
+            color: rgb(255, 255, 255);
+        }
+        h1{
+            text-align: right;
+            text-align: center;
+            padding: 5px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(240, 238, 235);
+            
+        }
+        section{
+            padding: 15px;
+        }
+        p {
+            padding: 5px;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        img{
+            width:360px;
+            float: right;
+            margin-right: 30px;
+        }
+        navbar-brand{
+            width: 150px;
+        }
+
+        navbar-brand{
+            width: 150px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #002B5C;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        input[type="text"] {
+            margin-left: 5px;
+        }
+        input[type="submit"] {
+            display: block;
+            margin: 20px auto 0;
+            background-color: #85714D;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #002B5C ;
+        }
+        .bg-light {
+            background: rgb(0,43,92);
+            background: linear-gradient(90deg, rgba(0,43,92,1) 18%, rgba(133,113,77,1) 100%);
+        
+        }
+        .logo{
+            width: 5em;
+            height: 5em;
+        }
+        .texto-lista{
+            padding: 15px;
+        }
+        .formulario {
+            max-width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .logo{
+            width: 5em;
+            height: 4em;
+        }
+        .texto-lista{
+            padding: 15px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .banner {
+        width: 100%;
+        height: auto;
+        padding: 25px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
+            <h1 style="color: #fff;">Teams <i class="fa-solid fa-feather-pointed" style="color: #ffffff;"></i></h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">All Star Games</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Arenas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Times</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Jogadores</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <section>
+        <div>
+            <img src="https://cdn.nba.com/teams/uploads/sites/1610612740/2021/12/pelicans_primary_logo.svg">
+            <br>
+            <h1><b>New Orleans Pelicans</b></h1>
+            <br>
+            <p>
+                <h2><b>História</b></h2>
+                A história e fundação dos New Orleans Pelicans remontam ao ano de 2002, quando a NBA (National Basketball Association) concedeu a franquia para a cidade de New Orleans. Originalmente, 
+                a equipe foi chamada de New Orleans Hornets. O nome "Hornets" foi inspirado na história de New Orleans, onde durante a Guerra de 1812, os soldados locais eram conhecidos como "Os Hornets de Nova Orleans" por sua ferocidade.<br>
+                Os Hornets tiveram um período variado de sucesso durante sua permanência em Nova Orleans. Eles tiveram alguns anos fortes, incluindo temporadas com jogadores notáveis como Chris Paul, mas também tiveram anos menos bem-sucedidos.<br>
+                Em 2012, a franquia mudou de nome para New Orleans Pelicans. A mudança veio depois que a franquia anterior de New Orleans, os Hornets, foi vendida para Tom Benson, o proprietário do New Orleans Saints, uma equipe da NFL (National Football League). A mudança para Pelicans foi feita para refletir mais a região e a cultura de Nova Orleans, além de criar uma nova identidade para a equipe.<br>
+                Desde então, os Pelicans têm trabalhado para estabelecer uma identidade forte na NBA, contando com jogadores talentosos como Anthony Davis e Zion Williamson, e buscando construir uma base sólida para o sucesso a longo prazo. A equipe continua a evoluir e competir na liga sob a bandeira dos New Orleans Pelicans.<br> 
+                <br>
+                <h2><b>Arena</b></h2> A arena principal dos New Orleans Pelicans é o <a href="#"> Smoothie King Center </a> , localizado em Nova Orleans, Louisiana.<br>
+                A capacidade do Smoothie King Center é de aproximadamente 17.791 espectadores<br>
+                <hr>
+                <img src="data:image/jpeg;base64,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" alt="Mascote">
+                <h2><b>Cores e Mascote</b></h2>
+                <p>As cores do New Orleans Pelicans são Azul Marinho, Dourado e Branco.<br>
+                    <br>
+                    O mascote dos New Orleans Pelicans é chamado de <b>"Pierre the Pelican"</b>.<br>
+                    Ele foi introduzido como mascote oficial da equipe em outubro de 2013. No entanto, a história por trás de Pierre é um tanto peculiar.<br>
+                    Quando Pierre foi originalmente revelado ao público, ele recebeu reações mistas devido ao seu visual um tanto peculiar e até assustador. Muitos fãs consideraram sua aparência como sendo um pouco assustadora, o que gerou uma reação negativa nas redes sociais.<br>
+                    Devido às críticas e à reação negativa do público, houve uma reformulação do design de Pierre. Em fevereiro de 2014, o Pelicans anunciou uma "cirurgia" fictícia para Pierre, resultando em um novo visual mais amigável e agradável para o mascote.<br>
+
+                </p>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <div>
+            <h2><b>Momentos Notáveis</b></h2>
+            <p>
+            <li><b>Draft de Anthony Davis:</b> Em 2012, os Pelicans ganharam o direito de selecionar Anthony Davis como a primeira escolha geral no Draft da NBA. Davis rapidamente se tornou uma estrela da liga e foi uma peça central na reconstrução da equipe.</li>
+            <li><b>Primeira Aparição nos Playoffs como Pelicans:</b> Na temporada 2014-2015, os Pelicans se classificaram para os playoffs da NBA pela primeira vez desde que mudaram seu nome para Pelicans. Eles foram liderados por Anthony Davis e enfrentaram o Golden State Warriors na primeira rodada.</li>
+            <li><b>Troca de DeMarcus Cousins: </b> Em 2017, os Pelicans adquiriram DeMarcus Cousins em uma troca com o Sacramento Kings. A parceria de Cousins com Anthony Davis prometeu muito para a equipe, mas infelizmente, a temporada foi interrompida por uma lesão de Cousins.</li>
+            <li><b>Seleção de Zion Williamson:</b> Os Pacers chegaram às Finais da NBA em 2000, liderados por Reggie Miller e uma equipe talentosa que incluía Jermaine O'Neal, Jalen Rose e Mark Jackson. Embora tenham perdido para o Los Angeles Lakers, foi um marco significativo na história da franquia.</li>
+            <li><b>Jogo de 50 pontos de Anthony Davis:</b> No Draft de 2019, os Pelicans selecionaram Zion Williamson com a primeira escolha geral. Williamson chegou à NBA com uma enorme expectativa e tem sido uma peça central nos planos de reconstrução dos Pelicans.</li>
+            </p>
+        </div>
+        <div>
+            <h2><b>Rivalidades</b></h2>
+            <p>
+               <a href="#">Memphis Grizzlies:</a> Embora não seja uma rivalidade histórica, os Pelicans e os Grizzlies competem na mesma divisão (Sudoeste) desde que os Pelicans mudaram para Nova Orleans. Como tal, os confrontos entre essas equipes têm o potencial de se tornarem rivalidades, especialmente com jogos frequentes na temporada regular. <br>
+               <a href="#">Golden State Warriors:</a> Durante os playoffs de 2015, os Pelicans enfrentaram os Warriors na primeira rodada. Embora os Warriors fossem favoritos e vencessem a série, os confrontos competitivos entre essas equipes podem alimentar uma rivalidade em desenvolvimento.<br>
+               <a href="#">Los Angeles Lakers: </a> Os Pelicans compartilham uma divisão com os Lakers, e houve alguns momentos notáveis de competição entre as duas equipes ao longo dos anos. Além disso, a presença de jogadores estelares como Anthony Davis nos Pelicans e LeBron James nos Lakers adiciona interesse a esses confrontos.<br>
+            </p>
+        </div>
+    </section>
+    <div class="container">
+        <h1><b>New Orleans Pelicans Core Players</b></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Posição</th>
+                    <th>Número</th>
+                    <th>Altura</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lonzo Ball</td>
+                    <td>Armador</td>
+                    <td>26</td>
+                    <td>1,98 m</td>
+                </tr>
+                <tr>
+                    <td>Onuralp Bitim</td>
+                    <td>Ala</td>
+                    <td>25</td>
+                    <td>1,98 m</td>
+                </tr>
+                <tr>
+                    <td>Jevon Carter</td>
+                    <td>Armador</td>
+                    <td>28</td>
+                    <td>1,85 m</td>
+                </tr>
+                <tr>
+                    <td>Alex Caruso</td>
+                    <td>Armador</td>
+                    <td>30</td>
+                    <td>1,96 m</td>
+                </tr>
+                <tr>
+                    <td>Torrey Craig</td>
+                    <td>Ala</td>
+                    <td>33</td>
+                    <td>1,96 m</td>
+                </tr>
+                <tr>
+                    <td>DeMar DeRozan</td>
+                    <td>Ala</td>
+                    <td>34</td>
+                    <td>1,98 m</td>
+                </tr>
+                <tr>
+                    <td>Ayo Dosunmu</td>
+                    <td>Armador</td>
+                    <td>24</td>
+                    <td>1,96 m</td>
+                </tr>
+                <tr>
+                    <td>Henri Drell</td>
+                    <td>Ala</td>
+                    <td>24</td>
+                    <td>2,06 m</td>
+                </tr>
+                <tr>
+                    <td>Andre Drummond</td>
+                    <td>Pivô</td>
+                    <td>30</td>
+                    <td>2,11 m</td>
+                </tr>
+                <tr>
+                    <td>Andrew Funk</td>
+                    <td>Guarda</td>
+                    <td>24</td>
+                    <td>1,96 m</td>
+                </tr>
+                <tr>
+                    <td>Javonte Green</td>
+                    <td>Guarda</td>
+                    <td>30</td>
+                    <td>1,96 m</td>
+                </tr>
+                <tr>
+                    <td>Jose Alvarado</td>
+                    <td>Armador</td>
+                    <td>15</td>
+                    <td>1,83 m</td>
+                </tr>
+                <tr>
+                    <td>Izaiah Brockington</td>
+                    <td>Guarda</td>
+                    <td>21</td>
+                    <td>1,93 m</td>
+                </tr>
+                <tr>
+                    <td>Jalen Crutcher</td>
+                    <td>Guarda</td>
+                    <td>10</td>
+                    <td>1,88 m</td>
+                </tr>
+                <tr>
+                    <td>Dyson Daniels</td>
+                    <td>Guarda</td>
+                    <td>11</td>
+                    <td>2,01 m</td>
+                </tr>
+                <tr>
+                    <td>Jordan Hawkins</td>
+                    <td>Guarda</td>
+                    <td>24</td>
+                    <td>1,96 m</td>
+                </tr>
+                <tr>
+                    <td>Malcolm Hill</td>
+                    <td>Guarda</td>
+                    <td>33</td>
+                    <td>1,98 m</td>
+                </tr>
+                <tr>
+                    <td>Brandon Ingram</td>
+                    <td>Ala Armador</td>
+                    <td>14</td>
+                    <td>2,03 m</td>
+                </tr>
+                <tr>
+                    <td>Herbert Jones</td>
+                    <td>Ala Armador</td>
+                    <td>5</td>
+                    <td>2,01 m</td>
+                </tr>
+                <tr>
+                    <td>E.J. Liddell</td>
+                    <td>Ala Pivô</td>
+                    <td>32</td>
+                    <td>1,98 m</td>
+                </tr>
+                <tr>
+                    <td>Naji Marshall</td>
+                    <td>Ala Armador</td>
+                    <td>8</td>
+                    <td>1,98 m</td>
+                </tr>
+                <tr>
+                    <td>CJ McCollum</td>
+                    <td>Armador / Ala Armador</td>
+                    <td>3</td>
+                    <td>1,91 m</td>
+                </tr>
+                <tr>
+                    <td>Trey Murphy III</td>
+                    <td>Armador / Ala Armador</td>
+                    <td>25</td>
+                    <td>2,03 m</td>
+                </tr>
+                <tr>
+                    <td>Larry Nance Jr.</td>
+                    <td>Ala Pivô</td>
+                    <td>22</td>
+                    <td>2,03 m</td>
+                </tr>
+                <tr>
+                    <td>Jeremiah Robinson-Earl</td>
+                    <td>Ala</td>
+                    <td>50</td>
+                    <td>2,06 m</td>
+                </tr>
+                <tr>
+                    <td>Matt Ryan</td>
+                    <td>Ala</td>
+                    <td>37</td>
+                    <td>1,98 m</td>
+                </tr>
+                <tr>
+                    <td>Dereon Seabron</td>
+                    <td>Guarda</td>
+                    <td>0</td>
+                    <td>1,96 m</td>
+                </tr>
+                <tr>
+                    <td>Jonas Valanciunas</td>
+                    <td>Pivô</td>
+                    <td>17</td>
+                    <td>2,11 m</td>
+                </tr>
+                <tr>
+                    <td>Zion Williamson</td>
+                    <td>Ala Pivô</td>
+                    <td>1</td>
+                    <td>1,98 m</td>
+                </tr>
+                <tr>
+                    <td>Cody Zeller</td>
+                    <td>Pivô</td>
+                    <td>40</td>
+                    <td>2,11 m</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="formulario">
+        <h2><b>Formulário de Perguntas sobre o New Orleans Pelicans</b></h2>
+        <form id="pelicans-form">
+            <div class="form-group">
+                <label>Qual é o seu jogador favorito atual do New Orleans Pelicans?</label>
+                <br>
+                <div>
+                    <label for="player-zion-williamson">Zion Williamson</label>
+                    <input type="radio" id="player-zion-williamson" name="favorite-player" value="Zion Williamson">
+                    
+                </div>
+                <div>
+                    <label for="player-brandon-ingram">Brandon Ingram</label>
+                    <input type="radio" id="player-brandon-ingram" name="favorite-player" value="Brandon Ingram">
+                    
+                </div>
+                <div>
+                    <label for="player-jonas-valančiūnas">Jonas Valančiūnas</label>
+                    <input type="radio" id="player-jonas-valančiūnas" name="favorite-player" value="Jonas Valančiūnas">
+                    
+                </div>
+                <div>
+                    <label for="player-other">Outro:</label>
+                    <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
+                    
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Quem você considera o maior jogador da história do New Orleans Pelicans?</label>
+                <br>
+                <div>
+                    <label for="greatest-player-anthony-davis">Anthony Davis</label>
+                    <input type="radio" id="greatest-player-anthony-davis" name="greatest-player" value="Anthony Davis">    
+                </div>
+                <div>   
+                    <label for="greatest-player-chris-paul">Chris Paul</label>
+                    <input type="radio" id="greatest-player-chris-paul" name="greatest-player" value="Chris Paul">
+                </div>
+                <div>
+                    <label for="greatest-player-demarcus-cousins">DeMarcus Cousins</label>
+                    <input type="radio" id="greatest-player-demarcus-cousins" name="greatest-player" value="DeMarcus Cousins">
+                </div>
+                <div>
+                    <label for="greatest-player-other">Outro:</label>
+                    <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Qual é a sua expectativa para a próxima temporada da NBA?</label>
+                <br>
+                <div>
+                    <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
+                    <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
+                    
+                </div>
+                <div>
+                    <label for="next-season-expectation-development">Desenvolvimento dos jogadores</label>
+                    <input type="radio" id="next-season-expectation-development" name="next-season-expectation" value="Desenvolvimento dos jogadores">
+                    
+                </div>
+                <div>
+                    <label for="next-season-expectation-other">Outro:</label>
+                    <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
+                </div>
+                <div>
+                    <label for="next-season-expectation-question">Quais áreas você acredita que o New Orleans Pelicans precisa melhorar para ter sucesso na próxima temporada?</label>
+                    <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+                </div>
+
+                <br>
+                <div>
+                    <label for="next-season-expectation-question">Como você avalia as contratações feitas pelo New Orleans Pelicans nesta offseason?</label>
+                    <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+                </div>
+                <br>
+
+                <div>
+                    <label for="next-season-expectation-question">Qual é a sua opinião sobre o treinador atual do New Orleans Pelicans, e o que você gostaria de ver diferente na abordagem técnica da equipe?</label>
+                    <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+                </div>
+
+                </div>
+                <input type="submit" value="Enviar Respostas">
+            </form>
+    </div>
+
+
+    <div style="position: relative; width: 100%; height: 0; padding-top: 50.0000%;
+    padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+    border-radius: 8px; will-change: transform;">
+     <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+       src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGE62dL1M&#x2F;O-P1zJPJ88S162fFeVc5yg&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+     </iframe>
+   </div>
+   <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGE62dL1M&#x2F;O-P1zJPJ88S162fFeVc5yg&#x2F;view?utm_content=DAGGE62dL1M&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">p</a> 
+
+        <footer>
+            <p>&copy; 2024 NBA - New Orleans Pelicans </p>
+          </footer>

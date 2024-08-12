@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-BR"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Indiana Pacers </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/nbazone/CSS/geral.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .navbar-expand-lg .navbar-nav {
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            color: white;
+        }
+    
+        h2{
+            color: #002D62;
+        }
+        b {
+            padding: 15px;
+            font-size: 1em;
+            color: #002D62;
+        }
+ 
+        th {
+            background-color: #FDBB30;
+            color: rgb(0, 0, 0);
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        input[type="submit"] {
+            background-color: #FDBB30;
+            color: #fff;
+
+        }
+        input[type="submit"]:hover {
+            background-color: #FDBB30;
+        }
+        .bg-light {
+            background-color: darkgray;
+        
+        }
+        .bg-body-tertiary{
+            background: #FDBB30;
+           }
+
+           .box-texto{
+            background: red;
+        
+        }
+
+        .title{
+            color: #FDBB30;
+
+        }
+        
+        .formulario {
+            background-color: #e8ffea;
+        }
+   
+        @keyframes motion{
+            0%{
+                color: #FDBB30;
+                margin-bottom: -42px;
+            }
+            30%{
+                letter-spacing: 30px;
+                margin-bottom: -42px;
+                }
+            85%{
+                letter-spacing: 5px;
+                margin-bottom: -42px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+   
+    <header class="box-texto">      
+        <h1 class="title">Bem vindo Pacers Fans!</h1>
+        <span class="descricao">Indiana Pacers</span>
+      </header><br>
+      <br>
+  <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
+          <h1>Teams</h1>
+          
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="http://localhost/pasta_teste/PaginaInicial.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="allstargames.html">All Star Games</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost/pasta_teste/arenas.html">Arenas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Times</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="players.html">Jogadores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+  </header>
+
+  <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+      
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Historia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="CoreseMascote">Cores e Mascote</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="momentosnotaveis">Momentos Notáveis</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Rivalidades">Rivalidades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="CorePlayers">Core Players</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Quiz">Formulario</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+  </header>
+        <div>
+            <img src="https://cdn.nba.com/teams/uploads/sites/1610612754/2021/10/logo-pacers.svg">
+            <br>
+            <h1><b>Indiana Pacers</b></h1>
+            <br>
+
+            <h2><b>História</b></h2>
+            <p>
+                O Indiana Pacers é uma equipe profissional de basquete sediada em Indianápolis, Indiana, nos Estados Unidos.<br>
+                O Indiana Pacers foram fundados em 1967 como uma equipe inaugural da American Basketball Association (ABA), uma liga rival da NBA na época.<br>
+                O nome "Pacers" foi escolhido em homenagem à "Indianapolis 500-Mile Race", uma famosa corrida de automóveis realizada anualmente em Indianápolis.<br>
+                Em 1976, a ABA fundiu-se com a NBA, e os Pacers foram uma das quatro equipes da ABA a ingressarem na NBA.<br> 
+            </p>
+
+            <b>Arena:</b>
+            <p>
+                arena principal do Indiana Pacers é o <a href="#"> Gainbridge Fieldhouse</a> ,localizada em Indianápolis, Indiana, nos Estados Unidos.<br>
+                A capacidade do Gainbridge Fieldhouse varia dependendo do evento. Para jogos de basquete da NBA, a capacidade é de aproximadamente 17.923 espectadores.<br>
+            </p>
+
+            <hr>
+            <img src="https://www.indystar.com/gcdn/-mm-/f2e38c496037a0d6fae1a214e9e065120b252430/c=0-185-1972-2814/local/-/media/2015/10/13/Indianapolis/Indianapolis/635803702792173458-19-Pacers101814.-.JPG" alt="Mascote">
+                <h2><b>Cores e Mascote:</b></h2>
+                <p>As cores do Indiana Pacers são azul, ouro e branco. </p>
+
+                <br>
+
+                <p>
+                    O mascote dos Indiana Pacers é chamado de <b>"Boomer"</b>. Boomer foi introduzido como mascote oficial dos Indiana Pacers em 1991.<br>
+                    Ele é retratado como um pantera, refletindo a agilidade e a força associadas ao basquete e à identidade da equipe. A escolha de uma pantera como mascote pode refletir a identidade e os valores da equipe.<br>
+                    Ele é uma parte essencial da experiência do jogo, interagindo com os fãs, fazendo acrobacias e promovendo a equipe durante os intervalos e eventos especiais.<br> 
+                </p>
+        </div>
+    <hr>
+        <div>
+            <h2><b>Momentos Notáveis</b></h2>
+            <p>
+            <li><b class="grifado">Três títulos da ABA (1970, 1972, 1973):</b> Nos primeiros anos da franquia, os Pacers foram uma força dominante na American Basketball Association, conquistando três campeonatos em um período de quatro temporadas.</li>
+            <li><b class="grifado">Transferência para a NBA (1976):</b> Os Pacers foram uma das equipes da ABA selecionadas para se juntar à NBA após a fusão das duas ligas em 1976, solidificando seu lugar no cenário do basquete profissional dos EUA.</li>
+            <li><b class="grifado">Era Reggie Miller: </b> Reggie Miller é uma lenda dos Pacers e protagonizou vários momentos inesquecíveis ao longo de sua carreira. Um dos mais notáveis foi o jogo de playoffs de 1995 contra o New York Knicks, no qual Miller marcou 8 pontos em 8.9 segundos para selar a vitória dos Pacers.</li>
+            <li><b class="grifado">Finais da NBA de 2000:</b> Os Pacers chegaram às Finais da NBA em 2000, liderados por Reggie Miller e uma equipe talentosa que incluía Jermaine O'Neal, Jalen Rose e Mark Jackson. Embora tenham perdido para o Los Angeles Lakers, foi um marco significativo na história da franquia.</li>
+            <li><b class="grifado">Rivalidade com os Knicks: </b> Ao longo dos anos, os Pacers tiveram uma rivalidade intensa com o New York Knicks, especialmente nos anos 90. Os confrontos entre as duas equipes nos playoffs eram frequentemente emocionantes e disputados até o fim.</li>
+            </p>
+        </div>
+
+        <div>
+            <h2><b class="grifado">Rivalidades</b></h2>
+            <p>
+               <a href="#">New York Knicks:</a> Durante os anos 90 e início dos anos 2000, os Pacers e os Knicks tiveram uma rivalidade intensa. Os confrontos entre as duas equipes nos playoffs eram sempre acirrados e cheios de emoção, com momentos memoráveis e jogos disputados até o último segundo. <br>
+               <a href="#">Chicago Bulls:</a> Nos anos 90, os Pacers enfrentaram frequentemente o Chicago Bulls de Michael Jordan nos playoffs. Embora os Bulls fossem dominantes na época, os confrontos entre as duas equipes eram sempre emocionantes e ajudaram a alimentar uma rivalidade entre os dois times.<br>
+               <a href="#">Miami Heat: </a> Nos anos 2010, os Pacers e o Miami Heat desenvolveram uma rivalidade competitiva, especialmente durante os playoffs. As batalhas entre LeBron James e Dwyane Wade, do Heat, e Paul George e Roy Hibbert, dos Pacers, eram intensas e resultaram em alguns jogos memoráveis.<br>
+            </p>
+        </div>
+
+    <div class="container">
+        <h1><b>Indiana Pacers Core Players</b></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Number</th>
+                    <th>Height</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Kendall Brown</td>
+                    <td>Ala</td>
+                    <td>10</td>
+                    <td>2.01 m</td>
+                </tr>
+                <tr>
+                    <td>Tyrese Haliburton</td>
+                    <td>Guarda</td>
+                    <td>0</td>
+                    <td>1.96 m</td>
+                </tr>
+                <tr>
+                    <td>Isaiah Jackson</td>
+                    <td>Pivô</td>
+                    <td>22</td>
+                    <td>2.06 m</td>
+                </tr>
+                <tr>
+                    <td>Quenton Jackson</td>
+                    <td>Ala</td>
+                    <td>29</td>
+                    <td>1.98 m</td>
+                </tr>
+                <tr>
+                    <td>James Johnson</td>
+                    <td>Ala-Pivô</td>
+                    <td>16</td>
+                    <td>2.01 m</td>
+                </tr>
+                <tr>
+                    <td>Bennedict Mathurin</td>
+                    <td>Ala - Armador</td>
+                    <td>00</td>
+                    <td>1.98 m</td>
+                </tr>
+                <tr>
+                    <td>T.J. McConnell</td>
+                    <td>Armador</td>
+                    <td>9</td>
+                    <td>1.85 m</td>
+                </tr>
+                <tr>
+                    <td>Doug McDermott</td>
+                    <td>Ala</td>
+                    <td>20</td>
+                    <td>2.03 m</td>
+                </tr>
+                <tr>
+                    <td>Andrew Nembhard</td>
+                    <td>Armador</td>
+                    <td>2</td>
+                    <td>1.93 m</td>
+                </tr>
+                <tr>
+                    <td>Aaron Nesmith</td>
+                    <td>Ala</td>
+                    <td>23</td>
+                    <td>1.98 m</td>
+                </tr>
+                <tr>
+                    <td>Ben Sheppard</td>
+                    <td>Ala</td>
+                    <td>26</td>
+                    <td>2.01 m</td>
+                </tr>
+                <tr>
+                    <td>Pascal Siakam</td>
+                    <td>Ala-Pivô</td>
+                    <td>43</td>
+                    <td>2.06 m</td>
+                </tr>
+                <tr>
+                    <td>Jalen Smith</td>
+                    <td>Pivô</td>
+                    <td>25</td>
+                    <td>2.08 m</td>
+                </tr>
+                <tr>
+                    <td>Obi Toppin</td>
+                    <td>Ala-Pivô</td>
+                    <td>1</td>
+                    <td>2.03 m</td>
+                </tr>
+                <tr>
+                    <td>Oscar Tshiebwe</td>
+                    <td>Pivô</td>
+                    <td>44</td>
+                    <td>2.06 m</td>
+                </tr>
+                <tr>
+                    <td>Myles Turner</td>
+                    <td>Pivô</td>
+                    <td>33</td>
+                    <td>2.11 m</td>
+                </tr>
+                <tr>
+                    <td>Jarace Walker</td>
+                    <td>Ala</td>
+                    <td>5</td>
+                    <td>2.01 m</td>
+                </tr>
+                <tr>
+                    <td>Isaiah Wong</td>
+                    <td>Guarda</td>
+                    <td>21</td>
+                    <td>1.93 m</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="formulario">
+        <h2><b>Formulário de Perguntas sobre o Indiana Pacers</b></h2>
+        <form id="pacers-form">
+            <div class="form-group">
+                <label>Qual é o seu jogador favorito atual do Indiana Pacers?</label>
+                <br>
+                <div>
+                    <label for="player-caris-levert">Caris LeVert</label>
+                    <input type="radio" id="player-caris-levert" name="favorite-player" value="Caris LeVert">
+                </div>
+                <div>
+                    <label for="player-malcolm-brogdon">Malcolm Brogdon</label>
+                    <input type="radio" id="player-malcolm-brogdon" name="favorite-player" value="Malcolm Brogdon">
+                </div>
+                <div>
+                    <label for="player-myles-turner">Myles Turner</label>
+                    <input type="radio" id="player-myles-turner" name="favorite-player" value="Myles Turner">
+                </div>
+                <div>
+                    <label for="player-other">Outro:</label>
+                    <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Quem você considera o maior jogador da história do Indiana Pacers?</label>
+                <br>
+                <div>
+                    <label for="greatest-player-reggie-miller">Reggie Miller</label>
+                    <input type="radio" id="greatest-player-reggie-miller" name="greatest-player" value="Reggie Miller">
+                </div>
+                <div>
+                    <label for="greatest-player-paul-george">Paul George</label>
+                    <input type="radio" id="greatest-player-paul-george" name="greatest-player" value="Paul George">
+                </div>
+                <div>
+                    <label for="greatest-player-jermaine-oneal">Jermaine O'Neal</label>
+                    <input type="radio" id="greatest-player-jermaine-oneal" name="greatest-player" value="Jermaine O'Neal">
+                </div>
+                <div>
+                    <label for="greatest-player-other">Outro:</label>
+                    <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Qual é a sua expectativa para a próxima temporada da NBA para o Indiana Pacers?</label>
+                <br>
+                <div>
+                    <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
+                    <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
+                </div>
+                <div>
+                    <label for="next-season-expectation-development">Desenvolvimento dos jogadores</label>
+                    <input type="radio" id="next-season-expectation-development" name="next-season-expectation" value="Desenvolvimento dos jogadores">
+                </div>
+                <div>
+                    <label for="next-season-expectation-rebuilding">Reconstrução do time</label>
+                    <input type="radio" id="next-season-expectation-rebuilding" name="next-season-expectation" value="Reconstrução do time">
+                </div>
+                <div>
+                    <label for="next-season-expectation-other">Outro:</label>
+                    <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
+                </div>
+            </div>
+            <input type="submit" value="Enviar Respostas">
+        </form>
+    </div>
+
+    <div class="baner"> 
+        <div style="position: relative; width: 80%; height: 0; display: flex; padding-top: 56.2225%; padding-left: 20px; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform; display: flex; justify-content: center; align-items: center;">
+            <iframe loading="lazy" style="position: absolute; width: 100%; height: 80%; display: flex; top: 0; left: 0; border: none; padding: 0; margin: 0;"
+              src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGbqs3SYY&#x2F;X1GWTEagwaBecnx35jrphw&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+            </iframe>
+          </div>
+          <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGbqs3SYY&#x2F;X1GWTEagwaBecnx35jrphw&#x2F;view?utm_content=DAGGbqs3SYY&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a>
+    </div>
+
+
+    <footer>
+        <div class="container1">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Times</a></li>
+                        <li><a href="#">Jogadores</a></li>
+                        <li><a href="http://localhost/pasta_teste/arenas.html">Arenas</a></li>
+                        <li><a href="#">Notícias</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-icons">
+                        <a href="https://github.com/techybluiz"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/bianca-santos-71227a19b/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXSnhDSBMsQXLsFNHlJrnVZsbhLNnBLzZNKgvVgRNCpXGcmGzVsCKBtzhlhHgsDJrCKMN"><i class="fa-solid fa-envelope"></i></a>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>&copy; 2024 Todos os direitos reservados. Desenvolvido por Bianca Luiz.</p>
+                </div>
+            </div>
+        </div>
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-fIS28fKNuSy82olZu2UNUbzJrjKk4cOeY0PnN/3kq5CkTX9aW1Kgq3M08iIKG/mnEw5rwS8QqH0a1ED6N5O4Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+</body>

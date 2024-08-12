@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-BR"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> New York Knicks </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/nbazone/CSS/geral.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        header{
+            color: rgb(255, 255, 255);
+        }
+        h2{
+            color: #FF7518 ;
+        }
+        b {
+            font-size: 1em;
+            color: #FF7518 ;
+        }
+        footer{
+            text-align: center;
+            width: 100%;
+        }
+        hr{
+            color: rgb(255, 255, 255);
+        }
+        h1{
+            text-align: right;
+            text-align: center;
+            padding: 5px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(240, 237, 235);
+            
+        }
+        section{
+            padding: 15px;
+        }
+        p {
+            padding: 5px;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        img{
+            width:360px;
+            float: right;
+            margin-right: 30px;
+        }
+        navbar-brand{
+            width: 150px;
+        }
+
+        navbar-brand{
+            width: 150px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #006BB6 ;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        input[type="text"] {
+            margin-left: 5px;
+        }
+        input[type="submit"] {
+            display: block;
+            margin: 20px auto 0;
+            background-color: #006BB6;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #006BB6 ;
+        }
+        .bg-light {
+            background: rgb(0,107,182);
+            background: linear-gradient(90deg, rgba(0,107,182,1) 18%, rgba(255,117,24,1) 100%);
+        
+        }
+        .logo{
+            width: 5em;
+            height: 5em;
+        }
+        .texto-lista{
+            padding: 15px;
+        }
+        .formulario {
+            max-width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .logo{
+            width: 5em;
+            height: 4em;
+        }
+        .texto-lista{
+            padding: 15px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+         .form-group {
+        margin-bottom: 20px;
+         }
+       .banner {
+        width: 100%;
+        height: auto;
+        padding: 25px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
+            <h1><b>Teams</b></h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">All Star Games</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Arenas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Times</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Jogadores</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <section>
+        <div>
+            <img src="https://cdn.nba.com/teams/uploads/sites/1610612752/2022/10/NYK2223-PRIMARY-LOGO.svg">
+            <br>
+            <h1><b>New York Knicks</b></h1>
+            <br>
+            <p>
+                <h2><b>História</b></h2>
+                O New York Knicks foi fundado em 1946 como um dos membros originais da Basketball Association of America (BAA), que mais tarde se fundiu com a National Basketball League (NBL) para formar a National Basketball Association (NBA).<br>
+                Nos primeiros anos da equipe, os Knicks tiveram dificuldades para encontrar sucesso significativo. No entanto, na década de 1950, com a contratação do técnico Joe Lapchick e a adição de jogadores notáveis como Harry Gallatin e Carl Braun, os Knicks começaram a se tornar mais competitivos.<br>
+                A verdadeira era de ouro dos Knicks começou na década de 1970. Sob o comando do técnico Red Holzman e liderados por jogadores como Walt "Clyde" Frazier, Willis Reed, Dave DeBusschere, Bill Bradley e Earl Monroe, os Knicks ganharam dois campeonatos da NBA, em 1970 e 1973.<br>
+                Nas décadas seguintes, os Knicks tiveram altos e baixos, com períodos de sucesso intercalados com temporadas menos impressionantes. Eles foram notáveis durante a década de 1990, quando foram liderados por Patrick Ewing e alcançaram as finais da NBA em 1994, perdendo para o Houston Rockets.<br>
+                Durante os anos seguintes, os 76ers passaram por altos e baixos, mas continuaram a ser uma presença competitiva na NBA. Em 1983, eles ganharam seu terceiro título da NBA com uma equipe estrelada por Julius Erving, conhecido como "Dr. J".<br>
+                <br>
+                <h2><b>Arena</b></h2> O <a href="#s"> Madison Square Garden </a> ,uma das arenas mais famosas do mundo, é a casa dos New York Knicks.<br>
+                A capacidade é de aproximadamente 19.812 espectadores. <br>
+                <hr>
+                <img src="https://mascothalloffame.com/wp-content/uploads/bb-plugin/cache/Hudson-e1679833011584-circle.jpg" alt="Mascote">
+                <h2><b>Cores e Mascote:</b></h2>
+                <p>As cores principais do New York Knicks são laranja, azul e branco.<br>
+                    o New York Knicks tem um mascote chamado <b>"The Knicks City Dancers"</b> ou simplesmente "Knicks City Dancers". Embora não seja um mascote tradicional como um personagem em traje, as Knicks City Dancers são uma equipe de dançarinas que entretêm os fãs durante os jogos em casa dos Knicks no Madison Square Garden.<br>
+                    Eles desempenham um papel importante na animação da atmosfera durante os jogos e são muito apreciados pelos fãs da equipe. 
+                    <b>Benjamin Franklin</b> foi um dos fundadores dos Estados Unidos e desempenhou um papel importante na história da Filadélfia.<br>
+                    Além disso, os Knicks também podem ocasionalmente apresentar convidados especiais ou entretenimento adicional durante os intervalos dos jogos, mas não possuem um mascote em traje como algumas outras equipes esportivas.<br>
+                </p>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h2><b>Momentos Notáveis</b></h2>
+            <p>
+            <li><b>1969-70 Championship: </b>  O Knicks conquistou seu primeiro título da NBA na temporada 1969-70, liderado por estrelas como Willis Reed, Walt "Clyde" Frazier e Dave DeBusschere. Eles derrotaram o Los Angeles Lakers nas finais em uma série emocionante. </li>
+            <li><b>Willis Reed's Dramatic Entrance:</b>Na primeira partida das finais de 1970 contra o Lakers, Willis Reed, o líder da equipe, estava machucado. No entanto, ele surpreendeu a todos aparecendo para jogar, inspirando a equipe e os torcedores. Seu retorno impactante é um dos momentos mais icônicos da história dos Knicks.</li>
+            <li><b>Patrick Ewing Era:</b> A era de Patrick Ewing nos Knicks foi marcada por várias temporadas de sucesso na década de 1990. Ewing, um dos maiores jogadores da história da franquia, liderou os Knicks a várias aparições nas finais da Conferência Leste.</li>
+            <li><b>1994 NBA Finals Run: </b> Na temporada 1993-94, os Knicks chegaram às finais da NBA sob o comando do técnico Pat Riley. Embora tenham perdido para o Houston Rockets, a corrida até as finais foi emocionante para os torcedores dos Knicks.</li>
+            <li><b>Linsanity:</b>Em 2012, Jeremy Lin, um armador pouco conhecido na época, emergiu como uma sensação global durante uma série de jogos incríveis com os Knicks. Sua rápida ascensão ao estrelato foi um momento emocionante para a equipe e para a liga como um todo.</li>
+            <li><b>Madison Square Garden:</b> O Madison Square Garden é a lendária casa dos Knicks e palco de muitos momentos inesquecíveis. A atmosfera única e a paixão dos torcedores fazem de cada jogo uma experiência especial.</li>
+            </p>
+        </div>
+        <div>
+            <h2><b>Rivalidades</b></h2>
+            <p>
+               <a href="#">Brooklyn Nets:</a> Com a mudança dos Nets para Brooklyn em 2012, uma nova rivalidade começou a se desenvolver entre as duas equipes da cidade de Nova York. Os jogos entre os Knicks e os Nets são sempre intensos, com uma forte rivalidade local em jogo. <br>
+               <a href="#">Boston Celtics:</a> Esta é uma das rivalidades mais antigas e tradicionais da NBA. Knicks e Celtics competem na Divisão do Atlântico e tiveram muitos confrontos emocionantes ao longo dos anos, especialmente nas décadas de 1960 e 1970. Esta rivalidade é alimentada pela competição entre duas das maiores cidades da costa leste dos Estados Unidos, Nova York e Boston.<br>
+               <a href="#">Miami Heat: </a> Esta rivalidade se intensificou na década de 1990, especialmente durante os playoffs, quando os Knicks e o Miami Heat se enfrentaram repetidamente. Os confrontos muitas vezes foram físicos e emocionantes, com jogadores como Patrick Ewing e Alonzo Mourning liderando suas equipes. <br>
+            </p>
+        </div>
+    </section>
+    <div class="container">
+        <h1><b>New York Knicks Core Players</b></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Posição</th>
+                    <th>Número</th>
+                    <th>Altura</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Precious Achiuwa</td>
+                    <td>Ala-pivô</td>
+                    <td>5</td>
+                    <td>2,03 m</td>
+                </tr>
+                <tr>
+                    <td>OG Anunoby</td>
+                    <td>---</td>
+                    <td>8</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>Bojan Bogdanovic</td>
+                    <td>---</td>
+                    <td>44</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>Charlie Brown Jr.</td>
+                    <td>---</td>
+                    <td>4</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>Jalen Brunson</td>
+                    <td>---</td>
+                    <td>11</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>Alec Burks</td>
+                    <td>---</td>
+                    <td>18</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>Donte DiVincenzo</td>
+                    <td>---</td>
+                    <td>0</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>Mamadi Diakite</td>
+                    <td>---</td>
+                    <td>21</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>Josh Hart</td>
+                    <td>---</td>
+                    <td>3</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>Isaiah Hartenstein</td>
+                    <td>---</td>
+                    <td>55</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>DaQuan Jeffries</td>
+                    <td>---</td>
+                    <td>8</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>Miles McBride</td>
+                    <td>---</td>
+                    <td>2</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>Shake Milton</td>
+                    <td>---</td>
+                    <td>13</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>Julius Randle</td>
+                    <td>---</td>
+                    <td>30</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>Mitchell Robinson</td>
+                    <td>---</td>
+                    <td>23</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>Jericho Sims</td>
+                    <td>---</td>
+                    <td>45</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>Jacob Toppin</td>
+                    <td>---</td>
+                    <td>00</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>Duane Washington Jr</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class="formulario">
+        <h2><b>Formulário de Perguntas sobre o New York Knicks</b></h2>
+        <form id="knicks-form">
+            <div class="form-group">
+                <label>Qual é o seu jogador favorito atual do New York Knicks?</label>
+                <br>
+                <div>
+                    <label for="player-julius-randle">Julius Randle</label>
+                    <input type="radio" id="player-julius-randle" name="favorite-player" value="Julius Randle">
+                    
+                </div>
+                <div>
+                    <label for="player-rj-barrett">RJ Barrett</label>
+                    <input type="radio" id="player-rj-barrett" name="favorite-player" value="RJ Barrett">
+                    
+                </div>
+                <div>
+                    <label for="player-derrick-rose">Derrick Rose</label>
+                    <input type="radio" id="player-derrick-rose" name="favorite-player" value="Derrick Rose">
+                    
+                </div>
+                <div>
+                    
+                    <label for="player-other">Outro:</label>
+                    <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
+                    
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Quem você considera o maior jogador da história do New York Knicks?</label>
+                <br>
+                <div>
+                    <label for="greatest-player-willis-reed">Willis Reed</label>
+                    <input type="radio" id="greatest-player-willis-reed" name="greatest-player" value="Willis Reed">    
+                </div>
+                <div>   
+                    <label for="greatest-player-patrick-ewing">Patrick Ewing</label>
+                    <input type="radio" id="greatest-player-patrick-ewing" name="greatest-player" value="Patrick Ewing">
+                </div>
+                <div>
+                    <label for="greatest-player-walt-frazier">Walt Frazier</label>
+                    <input type="radio" id="greatest-player-walt-frazier" name="greatest-player" value="Walt Frazier">
+                </div>
+                <div>
+                    <label for="greatest-player-other">Outro:</label>
+                    <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Qual é a sua expectativa para a próxima temporada do New York Knicks?</label>
+                <br>
+                <div>
+                    <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
+                    <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
+                    
+                </div>
+                <div>
+                    <label for="next-season-expectation-development">Desenvolvimento dos jogadores</label>
+                    <input type="radio" id="next-season-expectation-development" name="next-season-expectation" value="Desenvolvimento dos jogadores">
+                    
+                </div>
+                <div>
+                    <label for="next-season-expectation-other">Outro:</label>
+                    <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
+                </div>
+                <br>
+                <div>
+                    <label for="next-season-expectation-question">Quais áreas você acredita que o New York Knicks precisa melhorar para ter sucesso na próxima temporada?</label>
+                    <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+                </div>
+                <br>
+                <div>
+                    <label for="next-season-expectation-question">Como você avalia as contratações feitas pelo New York Knicks nesta offseason?</label>
+                    <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+                </div>
+                <br>
+                <div>
+                    <label for="next-season-expectation-question">Qual é a sua opinião sobre o treinador atual do New York Knicks, e o que você gostaria de ver diferente na abordagem técnica da equipe?</label>
+                    <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+                </div>
+            </div>
+            <input type="submit" value="Enviar Respostas">
+        </form>
+    </div>
+
+
+    <div style="position: relative; width: 100%; height: 0; padding-top: 50.0000%;
+    padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+    border-radius: 8px; will-change: transform;">
+     <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+       src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGFCE0ajA&#x2F;8xYaupNX7lwoJ5Ay8A6eeA&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+     </iframe>
+   </div>
+   <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGFCE0ajA&#x2F;8xYaupNX7lwoJ5Ay8A6eeA&#x2F;view?utm_content=DAGGFCE0ajA&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a>
+
+        <footer>
+            <p>&copy; 2024 NBA - New York Knicks </p>
+          </footer>

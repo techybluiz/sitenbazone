@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="pt-BR"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Chicago Bulls </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/nbazone/CSS/geral.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+
+        .navbar-expand-lg .navbar-nav {
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            color: white;
+        }
+    
+        h2{
+            color: #CE1141;
+        }
+        b {
+            padding: 15px;
+            font-size: 1em;
+            color: #CE1141;
+        }
+ 
+        th {
+            background-color: #CE1141;
+            color: rgb(0, 0, 0);
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        input[type="submit"] {
+            background-color: #CE1141;
+            color: #fff;
+
+        }
+        input[type="submit"]:hover {
+            background-color: #3f0010;
+        }
+        .bg-light {
+            background-color: darkgray;
+        
+        }
+        .bg-body-tertiary{
+            background: #CE1141;
+           }
+
+           .box-texto{
+            background: red;
+        
+        }
+
+        .title{
+            color: #CE1141;
+
+        }
+        
+        .formulario {
+            background-color: #b3b3b3;
+        }
+   
+
+        @keyframes motion{
+            0%{
+                color: #CE1141;
+                margin-bottom: -42px;
+            }
+            30%{
+                letter-spacing: 30px;
+                margin-bottom: -42px;
+                }
+            85%{
+                letter-spacing: 5px;
+                margin-bottom: -42px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="box-texto">      
+        <h1 class="title">Bem vindo bulls Fans!</h1>
+        <span class="descricao">Chicago Bulls</span>
+    </header><br>
+      <br>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
+            <h1>Teams</h1>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="http://localhost/pasta_teste/PaginaInicial.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="http://localhost/pasta_teste/AllStarGames.html">All Star Games</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="http://localhost/pasta_teste/arenas.html">Arenas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Times</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="http://localhost/pasta_teste/players.html">Jogadores</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="http://localhost/pasta_teste/contato.html">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+        
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" id="historia" href="#">Historia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="CoreseMascote">Cores e Mascote</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="momentosnotaveis">Momentos Notáveis</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Rivalidades">Rivalidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="CorePlayers">Core Players</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Formulario">Formulario</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+<br>
+
+<section>
+    <div>
+        <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/b/be/Chicago_Bulls.png/200px-Chicago_Bulls.png" alt="chicago bulls">
+        <br>
+        <h1><b>Chicago Bulls</b></h1>
+        <br>
+
+        <h2 id="historia"><b>História</b></h2>
+
+        <p>
+            O <b class="grifado">Chicago Bulls</b> é uma franquia de basquete da NBA, fundada em 1966. O time ganhou notoriedade principalmente na década de 1990, quando conquistou 
+            seis campeonatos da NBA entre 1991 e 1998, com uma equipe estrelada por Michael Jordan, Scottie Pippen e outros grandes jogadores. Sob a liderança
+            do técnico Phil Jackson, os Bulls se tornaram uma das equipes mais dominantes da história da NBA, com um estilo de jogo inovador e uma dinastia 
+            que marcou época. Além dos títulos, a equipe se destacou pelo seu impacto cultural global, transformando Jordan em um ícone do esporte e elevando
+            o basquete a um novo patamar de popularidade ao redor do mundo.
+        </p>
+        <h2><b>Arena</b></h2>
+            <p> arena principal do Chicago Bulls é o <a href="#">United Center</a> , localizado em Chicago, Illinois, nos Estados Unidos. É uma das arenas mais icônicas da NBA e também é usada pelo time de hóquei no gelo Chicago Blackhawks da NHL.Para jogos de basquete da NBA, a capacidade é de aproximadamente 20.917 espectadores.</p>
+    <hr>
+        <img src="https://frankthetank.files.wordpress.com/2006/11/benny2_061024.jpg" alt="mascote">
+
+        <h2><b>Cores e Mascote</b></h2>
+            <p>
+                O mascote do Chicago Bulls é conhecido como <b class="grifado">"Benny the Bull"</b>. Ele é um touro antropomórfico, caracterizado por suas cores vermelho, preto e branco, que são as cores tradicionais da equipe. Benny the Bull é um dos mascotes mais reconhecíveis e queridos na NBA e tem uma história interessante por trás de sua criação e evolução.
+                Benny the Bull fez sua estreia como mascote oficial do Chicago Bulls em 1969. Ele foi criado como uma representação divertida e carismática do espírito da equipe, destinada a entreter os fãs durante os jogos e eventos relacionados ao Bulls. O nome "Benny" foi escolhido como uma abreviação de "Bulls", tornando-se uma identidade icônica associada ao time.
+                Benny the Bull recebeu vários prêmios e reconhecimentos por sua atuação como mascote, incluindo múltiplos prêmios como "Melhor Mascote da NBA". Sua capacidade de entreter e cativar o público o tornou uma figura querida não apenas entre os fãs dos Bulls, mas também entre os fãs de esportes em geral.
+            </p>
+    </div>
+</section>
+
+<div>
+    <h2 id="momentosnotaveis"><b>Momentos Notáveis</b></h2>
+    <p>
+        <li><b class="grifado">Era Michael Jordan (1984-1998):</b> Durante os anos 90, Michael Jordan liderou o Chicago Bulls a seis títulos da NBA, consolidando-se como um dos maiores jogadores de basquete de todos os tempos. Esse período inclui a famosa "trilogia" de títulos consecutivos de 1991 a 1993, seguidos por mais três títulos em 1996, 1997 e 1998.</li>
+        <li><b class="grifado">Dynasty Bulls:</b> Além de Jordan, o Chicago Bulls contava com outros jogadores notáveis como Scottie Pippen, Dennis Rodman, Horace Grant e Toni Kukoc. Juntos, formaram uma das equipes mais dominantes da história da NBA.</li>
+        <li><b class="grifado">O Tiro do Jordan:</b> O arremesso de Jordan para vencer o Jogo 6 das Finais da NBA de 1998 contra o Utah Jazz ficou conhecido como "The Shot". Esse momento icônico encapsula a habilidade de Jordan em momentos decisivos.</li>
+        <li><b class="grifado">72-10 na Temporada Regular de 1995-1996:</b> Os Bulls de 1995-1996 estabeleceram um recorde impressionante na temporada regular da NBA, terminando com um recorde de 72 vitórias e apenas 10 derrotas. Esse recorde permanece como um dos melhores da história da liga.</li>
+        <li><b class="grifado">Derrick Rose e o MVP de 2011:</b> Derrick Rose, jogador dos Bulls, foi nomeado MVP (Jogador Mais Valioso) da temporada 2010-2011 da NBA. Sua habilidade explosiva e liderança levaram os Bulls de volta ao destaque na liga.</li>
+    </p>
+</div>
+    <div class="rivalidades">
+        <h2><b>Rivalidades</b></h2>
+        <p>
+            <li><a href="#"> Detroit Pistons:</a> Durante os anos 1980 e início dos anos 1990, os Bulls e os Pistons tiveram uma rivalidade intensa, especialmente nos playoffs. Os Pistons, conhecidos como "Bad Boys", foram uma grande barreira para os Bulls no início da carreira de Michael Jordan, mas os Bulls eventualmente superaram os Pistons e se tornaram uma potência da NBA.</li>
+            <li><a href="#"> New York Knicks:</a> Nos anos 1990, os Bulls e os Knicks tiveram uma rivalidade intensa, enfrentando-se repetidamente nos playoffs. Os jogos entre essas equipes eram fisicamente intensos e muito disputados, especialmente nas séries de playoffs.</li>
+            <li><a href="#">Cleveland Cavaliers:</a> Durante os anos 1980 e 1990, os Bulls e os Cavaliers desenvolveram uma rivalidade considerável, especialmente nos playoffs. Os Cavaliers foram um adversário frequente dos Bulls nas séries de playoffs, com jogos memoráveis, incluindo o famoso "The Shot", de Michael Jordan, em 1989.</li>
+        </p>
+    </div>
+
+
+<div id="CorePlayers" class="container">
+    <h1><b>Chicago Bulls Core Players</b></h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Posição</th>
+                <th>Número</th>
+                <th>Altura</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lonzo Ball</td>
+                <td>Armador</td>
+                <td>26</td>
+                <td>1,98 m</td>
+            </tr>
+            <tr>
+                <td>Onuralp Bitim</td>
+                <td>Ala</td>
+                <td>25</td>
+                <td>1,98 m</td>
+            </tr>
+            <tr>
+                <td>Jevon Carter</td>
+                <td>Armador</td>
+                <td>28</td>
+                <td>1,85 m</td>
+            </tr>
+            <tr>
+                <td>Alex Caruso</td>
+                <td>Armador</td>
+                <td>30</td>
+                <td>1,96 m</td>
+            </tr>
+            <tr>
+                <td>Torrey Craig</td>
+                <td>Ala</td>
+                <td>33</td>
+                <td>1,96 m</td>
+            </tr>
+            <tr>
+                <td>DeMar DeRozan</td>
+                <td>Ala</td>
+                <td>34</td>
+                <td>1,98 m</td>
+            </tr>
+            <tr>
+                <td>Ayo Dosunmu</td>
+                <td>Armador</td>
+                <td>24</td>
+                <td>1,96 m</td>
+            </tr>
+            <tr>
+                <td>Henri Drell</td>
+                <td>Ala</td>
+                <td>24</td>
+                <td>2,06 m</td>
+            </tr>
+            <tr>
+                <td>Andre Drummond</td>
+                <td>Pivô</td>
+                <td>30</td>
+                <td>2,11 m</td>
+            </tr>
+            <tr>
+                <td>Andrew Funk</td>
+                <td>Guarda</td>
+                <td>24</td>
+                <td>1,96 m</td>
+            </tr>
+            <tr>
+                <td>Javonte Green</td>
+                <td>Guarda</td>
+                <td>30</td>
+                <td>1,96 m</td>
+            </tr>
+            <tr>
+                <td>Zach LaVine</td>
+                <td>Armador</td>
+                <td>29</td>
+                <td>1,96 m</td>
+            </tr>
+            <tr>
+                <td>Julian Phillips</td>
+                <td>Ala</td>
+                <td>20</td>
+                <td>2,03 m</td>
+            </tr>
+            <tr>
+                <td>Adama Sanogo</td>
+                <td>Pivô</td>
+                <td>22</td>
+                <td>2,06 m</td>
+            </tr>
+            <tr>
+                <td>Dalen Terry</td>
+                <td>Ala</td>
+                <td>21</td>
+                <td>2,01 m</td>
+            </tr>
+            <tr>
+                <td>Nikola Vucevic</td>
+                <td>Pivô</td>
+                <td>33</td>
+                <td>2,08 m</td>
+            </tr>
+            <tr>
+                <td>Coby White</td>
+                <td>Armador</td>
+                <td>24</td>
+                <td>1,96 m</td>
+            </tr>
+            <tr>
+                <td>Patrick Williams</td>
+                <td>Ala de Força</td>
+                <td>22</td>
+                <td>2,01 m</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    
+    <div class="formulario">
+        <h2><b>Formulário de Perguntas sobre o Chicago Bulls</b></h2>
+        <form id="bulls-form">
+            <div class="form-group">
+                <label>Qual é o seu jogador favorito atual do Chicago Bulls?</label>
+                <br>
+                <div>
+                    <label for="player-zach-lavine">Zach LaVine</label>
+                    <input type="radio" id="player-zach-lavine" name="favorite-player" value="Zach LaVine">
+                </div>
+                <div>
+                    <label for="player-nikola-vucevic">Nikola Vucevic</label>
+                    <input type="radio" id="player-nikola-vucevic" name="favorite-player" value="Nikola Vucevic">
+                </div>
+                <div>
+                    <label for="player-demar-derozan">DeMar DeRozan</label>
+                    <input type="radio" id="player-demar-derozan" name="favorite-player" value="DeMar DeRozan">
+                </div>
+                <div>
+                    <label for="player-other">Outro:</label>
+                    <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Quem você considera o maior jogador da história do Chicago Bulls?</label>
+                <br>
+                <div>
+                    <label for="greatest-player-michael-jordan">Michael Jordan</label>
+                    <input type="radio" id="greatest-player-michael-jordan" name="greatest-player" value="Michael Jordan">
+                </div>
+                <div>
+                    <label for="greatest-player-scottie-pippen">Scottie Pippen</label>
+                    <input type="radio" id="greatest-player-scottie-pippen" name="greatest-player" value="Scottie Pippen">
+                </div>
+                <div>
+                    <label for="greatest-player-derrick-rose">Derrick Rose</label>
+                    <input type="radio" id="greatest-player-derrick-rose" name="greatest-player" value="Derrick Rose">
+                </div>
+                <div>
+                    <label for="greatest-player-other">Outro:</label>
+                    <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Qual é a sua expectativa para a próxima temporada da NBA?</label>
+                <br>
+                <div>
+                    <label for="next-season-expectation-championship">Vencer o campeonato</label>
+                    <input type="radio" id="next-season-expectation-championship" name="next-season-expectation" value="Vencer o campeonato">
+                </div>
+                <div>
+                    <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
+                    <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
+                </div>
+                <div>
+                    <label for="next-season-expectation-development">Desenvolvimento dos jogadores</label>
+                    <input type="radio" id="next-season-expectation-development" name="next-season-expectation" value="Desenvolvimento dos jogadores">
+                </div>
+                <div>
+                    <label for="next-season-expectation-other">Outro:</label>
+                    <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
+                </div>
+            </div>
+            <input type="submit" value="Enviar Respostas">
+        </form>
+    </div>
+  
+    <div class="baner"> 
+        <div style="position: relative; width: 80%; height: 0; display: flex; padding-top: 56.2225%; padding-left: 20px; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform; display: flex; justify-content: center; align-items: center;">
+            <iframe loading="lazy" style="position: absolute; width: 100%; height: 80%; display: flex; top: 0; left: 0; border: none; padding: 0; margin: 0;"
+              src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGK-nzsXU&#x2F;TLMK2lg5o7ZTIfc2z2YRsw&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+            </iframe>
+          </div>
+          <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGK-nzsXU&#x2F;TLMK2lg5o7ZTIfc2z2YRsw&#x2F;view?utm_content=DAGGK-nzsXU&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a>
+    </div>
+
+  <footer>
+    <div class="footer">
+        <div class="row">
+            <div class="col-md-6">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="times.html">Times</a></li>
+                    <li><a href="http://localhost/pasta_teste/players.html">Jogadores</a></li>
+                    <li><a href="#">Arenas</a></li>
+                    <li><a href="#">Notícias</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div class="social-icons">
+                    <a href="https://github.com/techybluiz"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p>&copy; 2024 Todos os direitos reservados. Desenvolvido por Bianca Luiz.</p>
+            </div>
+        </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-fIS28fKNuSy82olZu2UNUbzJrjKk4cOeY0PnN/3kq5CkTX9aW1Kgq3M08iIKG/mnEw5rwS8QqH0a1ED6N5O4Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
